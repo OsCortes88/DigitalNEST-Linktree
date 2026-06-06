@@ -4,13 +4,27 @@ import LinkList from './LinkList.jsx';
 
 function App() {
   return (
-    <>
-      <AboutSection />
+    <div className="min-h-screen flex flex-col">
+      <header className="bg-blau">
+        <div>
+          <h1>
+            Associate Technical Assessment
+          </h1>
+        </div>
+      </header>
 
-      <br></br>
 
-      <LinkList />
-    </>
+      <section className="flex-1 p-10 pt-0">
+        <AboutSection />
+        
+        <LinkList />
+      </section>
+      
+
+      <footer className="bg-grana">
+        <p>© BizzNEST · software-development-associate · technical-assessment</p>
+      </footer>
+    </div>
   )
 }
 
