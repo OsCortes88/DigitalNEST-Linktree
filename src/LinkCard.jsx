@@ -7,7 +7,7 @@ function LinkCard({ icon, label, reference }) {
           <div className="break-all ml-5">
             <b>{label}</b>
             <div className="flex">
-              <p>{reference}</p>
+              <p className="label">{reference}</p>
             </div>
           </div>
         </div>
