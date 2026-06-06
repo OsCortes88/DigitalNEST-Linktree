@@ -14,7 +14,11 @@ function LinkList() {
     <LinkCard icon={link.icon} label={link.label} reference={link.reference} description={link.description} />
   );
 
-  return (links)
+  return (
+    <div className="p-5">
+      {links}
+    </div>
+  )
 
 }
 
