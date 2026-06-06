@@ -1,10 +1,15 @@
 import './App.css'
+import AboutSection from './AboutSection.jsx';
+import LinkList from './LinkList.jsx';
 
 function App() {
-
   return (
     <>
-      <div>Hello World!</div>
+      <AboutSection />
+
+      <br></br>
+
+      <LinkList />
     </>
   )
 }
