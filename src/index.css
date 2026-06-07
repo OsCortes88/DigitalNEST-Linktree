@@ -1,0 +1,85 @@
+/* Font Import */
+@font-face {
+  font-family: 'Sansation';
+  src: url('/src/assets/fonts/Sansation-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Styling Variables */
+
+:root {
+  --font-sansation: 'Sansation', sans-serif;
+
+  /* General Colors */
+  --color-primary-blau: #0A1A5C;
+  --color-neutral-100: #F4F2EC;
+  --color-primary-grana: #A50044;
+  --color-retro-burgundy: #7A003C;
+
+  /* Dark Mode Colors */
+  --retro-black: #0A0A0A;
+  --retro-graphite: #2B2B2B;
+  --retro-charcoal: #1F1F1F;
+
+  /* Typography */
+  --font-h1-size: 48px;
+  --font-h1-line-height: 56px;
+
+  /* Spacing (8pt-ish scale) */
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-48: 48px;
+}
+
+/* base Styles */
+
+header {
+  padding: var(--space-48) 0;
+}
+
+header div {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--space-24);
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  margin-bottom: var(--space-16);
+}
+
+body {
+  font-family: var(--font-sansation);
+  font-size: var(--font-body-size);
+  line-height: var(--font-body-line-height);
+  color: var(--color-neutral-900);
+  background-color: var(--color-neutral-100);
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-h1-size);
+  line-height: var(--font-h1-line-height);
+  font-weight: 700;
+  color: var(--color-neutral-900);
+  margin: 0 0 var(--space-16);
+}
+
+p {
+  font-size: var(--font-body-size);
+  line-height: var(--font-body-line-height);
+  margin: 0 0 var(--space-12);
+}
+
+footer {
+  padding: var(--space-24) 0;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
