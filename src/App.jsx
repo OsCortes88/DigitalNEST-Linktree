@@ -4,7 +4,7 @@ import LinkSection from './LinkSection.jsx'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col dark:bg-(--retro-black) dark:text-white">
       <header className="bg-(--color-primary-blau)">
         <div>
           <h1>

@@ -1,19 +1,20 @@
 function LinkCard({ icon, label, reference }) {
   return (
     <>
-      <a href={reference} target="_blank" rel="noopener noreferrer" className="block pointer-events-none p-4">
-        <div className="pointer-events-auto mx-auto flex max-w-lg items-center p-2 rounded-xl shadow-lg outline outline-black/5 hover:bg-gray-100 hover:shadow-xl hover:scale-[1.02] transition">
-          <img src={icon} className="w-10 h-10 object-cover shrink 0" alt={icon} />
-          <div className="break-all ml-5">
+      <a href={reference} target="_blank" rel="noopener noreferrer" className="pointer-events-none">
+        <div className="pointer-events-auto mx-auto max-w-lg flex p-4 items-center outline outline-black/10 rounded-xl shadow-lg transition hover:bg-gray-100 hover:shadow-xl hover:scale-[1.02] dark:bg-(--retro-charcoal) dark:hover:bg-(--retro-graphite)">
+          <img src={icon} className="w-10 h-10 object-cover dark:filter-[invert(1)_brightness(2)]" alt={icon} />
+          <div className="break-all ml-5 max-w-3/5">
             <b>{label}</b>
-            <div className="flex">
+            <div className="pointer-events">
               <p className="label">{reference}</p>
             </div>
           </div>
+          <img src="./src/assets/openIcon.svg" className="w-8 h-8 object-cover ml-auto dark:filter-[invert(1)_brightness(2)]" alt={icon} />
         </div>
       </a>
     </>
-  );
+  )
 }
 
-export default LinkCard;
+export default LinkCard
