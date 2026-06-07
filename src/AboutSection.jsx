@@ -7,7 +7,7 @@ function AboutSection() {
   return (
     <div className="p-10 pb-0">
       <div className={`mx-auto flex flex-col md:flex-row items-center max-w-xl transition-all duration-1000 ease-out ${viewingAboutMe ? "justify-start gap-x-5" : "justify-center"}`}>
-        <img src="src/assets/profile.JPG" alt="profile picture"
+        <img src="./profile.JPG" alt="profile picture"
           className="hover:brightness-75 hover:shadow-xl hover:scale-[1.02] w-32 h-32 rounded-full cursor-pointer object-cover"
           onClick={() => setViewingAboutMe(!viewingAboutMe)}
         />
@@ -21,7 +21,7 @@ function AboutSection() {
             <b>Oswaldo Cortes-Tinoco</b>
             <h3>Software Engineer</h3>
             <div className="flex items-center justify-center">
-              <img src="./src/assets/locationIcon.svg" className="w-5 h-5 dark:filter-[invert(1)_brightness(2)]"/>
+              <img src="./locationIcon.svg" className="w-5 h-5 dark:filter-[invert(1)_brightness(2)]"/>
               <h3>Salinas, CA</h3>
             </div>
           </div>
