@@ -10,7 +10,7 @@ function LinkCard({ icon, label, reference }) {
               <p className="label">{reference}</p>
             </div>
           </div>
-          <img src="./src/assets/openIcon.svg" className="w-8 h-8 object-cover ml-auto dark:filter-[invert(1)_brightness(2)]" alt={icon} />
+          <img src="./openIcon.svg" className="w-8 h-8 object-cover ml-auto dark:filter-[invert(1)_brightness(2)]" alt={icon} />
         </div>
       </a>
     </>
