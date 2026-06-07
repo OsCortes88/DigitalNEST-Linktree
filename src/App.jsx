@@ -1,4 +1,3 @@
-import './App.css'
 import AboutSection from './AboutSection.jsx'
 import LinkSection from './LinkSection.jsx'
 
