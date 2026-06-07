@@ -1,11 +1,11 @@
 import './App.css'
-import AboutSection from './AboutSection.jsx';
-import LinkList from './LinkList.jsx';
+import AboutSection from './AboutSection.jsx'
+import LinkSection from './LinkSection.jsx'
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-blau">
+      <header className="bg-(--color-primary-blau)">
         <div>
           <h1>
             Associate Technical Assessment
@@ -14,14 +14,14 @@ function App() {
       </header>
 
 
-      <section className="flex-1 p-10 pt-0">
+      <section className="flex-1 p-10">
         <AboutSection />
-        
-        <LinkList />
+
+        <LinkSection />
       </section>
       
 
-      <footer className="bg-grana">
+      <footer className="bg-(--color-retro-burgundy)">
         <p>© BizzNEST · software-development-associate · technical-assessment</p>
       </footer>
     </div>
