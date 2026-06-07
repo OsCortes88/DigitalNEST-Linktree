@@ -6,9 +6,7 @@ function LinkCard({ icon, label, reference }) {
           <img src={icon} className="w-10 h-10 object-cover dark:filter-[invert(1)_brightness(2)]" alt={icon} />
           <div className="break-all ml-5 max-w-3/5">
             <b>{label}</b>
-            <div className="pointer-events">
-              <p className="label">{reference}</p>
-            </div>
+            <p className="label hidden md:block">{reference}</p>
           </div>
           <img src="./openIcon.svg" className="w-8 h-8 object-cover ml-auto dark:filter-[invert(1)_brightness(2)]" alt={icon} />
         </div>
